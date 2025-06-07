@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "company": "Bumima",
+    "role": "Full Stack Developer",
+    "dates": "May 2024 - February 2025",
+    "description": [
+      "Partnered with stakeholders to design AI-based auto-trading applications with Python that trades Futures Derivatives contracts, automating trade decisions and reducing manual oversight by 85%.",
+      "Directed a 3-member developer team to build a high-frequency trading bot achieving 133% returns in 30 days of forward testing while improving team productivity through Agile methodology.",
+      "Containerized the applications using Docker, running on AWS EC2 instances with Auto Scaling to ensure 24/7 uptime."
+    ],
+    "technologies": ["Python", "SQL", "AWS EC2", "Docker", "Algorithmic Trading"]
+  },
+  {
+    "id": 2,
+    "company": "Bumima",
+    "role": "Software Development Intern",
+    "dates": "January 2024 - May 2024",
+    "description": [
+      "Optimized SQL queries (indexing, query refactoring) and Python algorithm, reducing latency by 78%.",
+      "Automated data collection using Flask, Lambda, and S3 buckets improving stakeholder transparency.",
+      "Developed an admin dashboard to monitor the applications running in the cloud."
+    ],
+    "technologies": ["Python", "CSS", "React", "AWS Lambda", "Flask"]
+  }
+]

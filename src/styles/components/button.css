@@ -1,0 +1,62 @@
+.cta-button {
+  background: #112240;
+  border: 2px solid #64ffda;
+  color: #64ffda;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: translateY(0);
+  user-select: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.3);
+}
+
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(100, 255, 218, 0.1);
+  transform: translate(0, 0);
+  animation: button-glow 3s infinite linear;
+  z-index: -1;
+}
+
+@keyframes button-glow {
+  0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+  50% { transform: translate(0, 0) scale(1.2); opacity: 0.3; }
+  100% { transform: translate(50%, 50%) scale(0.8); opacity: 0; }
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #64ffda;
+  transition: left 0.4s ease-out;
+  z-index: -1;
+}
+
+.cta-button:hover::before {
+  left: 0;
+}
+
+.cta-button:hover {
+  color: #020c1b;
+}

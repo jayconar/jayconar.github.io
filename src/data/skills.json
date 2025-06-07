@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Frontend",
+      "skills": ["React", "JavaScript", "HTML", "CSS", "EJS", "Flexbox", "Bootstrap", "Tailwind CSS"],
+      "accent": "#61DAFB"
+    },
+    {
+      "title": "Backend",
+      "skills": ["Node.js", "Express", "Python", "Flask", "Java", "SpringBoot", "Firebase", "REST APIs"],
+      "accent": "#68A063"
+    },
+    {
+      "title": "Cloud",
+      "skills": ["AWS", "EC2", "S3", "Lambda", "GitHub Actions", "Docker", "GCP"],
+      "accent": "#2496ED"
+    },
+    {
+      "title": "UI/UX",
+      "skills": ["Figma", "Media Queries", "CSS Animations", "Material UI", "Responsive Design"],
+      "accent": "#A259FF"
+    },
+    {
+      "title": "Database",
+      "skills": ["SQL", "Postgres", "MySQL", "ER Diagrams", "Google Sheets", "Relational Databases", "json", "Microsoft Access"],
+      "accent": "#FF6B6B"
+    },
+    {
+      "title": "Financial Markets",
+      "skills": ["Derivatives Contracts", "Crypto Trading", "ccxt", "pandas", "matplotlib", "Back testing"],
+      "accent": "#FFD166"
+    }
+]

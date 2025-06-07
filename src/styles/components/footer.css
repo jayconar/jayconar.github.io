@@ -1,0 +1,118 @@
+.footer {
+  background: rgba(6, 16, 33, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(100, 255, 218, 0.1);
+  padding: 25px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: #8892b0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  flex: 1;
+  opacity: 0.4;
+}
+
+.built-with {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  font-family: 'Lora', sans-serif;
+  gap: 10px;
+  color: #a8b2d1;
+  font-size: 0.95rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.react-icon {
+  color: #61dafb;
+  animation: spin 15s linear infinite;
+  font-size: 1.1rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(100, 255, 218, 0.15);
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  color: #64ffda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.4s ease forwards;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top:hover {
+  background: rgba(100, 255, 218, 0.25);
+  transform: translateY(-5px) scale(1.05);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .copyright, .built-with {
+    width: 100%;
+    text-align: center;
+    position: static;
+    transform: none;
+  }
+  
+  .built-with {
+    order: -1;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
