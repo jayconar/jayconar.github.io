@@ -5,7 +5,7 @@
       "description": "Web Application that allows us to visually track and log their travels on maps.",
       "tech": ["React", "Node.js", "Express", "PostgreSql"],
       "image": "traveltracker.png",
-      "demo": "https://github.com/jayconar/TravelTracker/blob/main/TravelTracking.gif",
+      "demo": "https://youtu.be/mZ5glBEJ-u4",
       "code": "https://github.com/jayconar/TravelTracker"
     },
     {
